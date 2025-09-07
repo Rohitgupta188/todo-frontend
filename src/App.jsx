@@ -8,7 +8,7 @@ function App() {
   const [editing, setEditing] = useState(null); // { id, task }
   const [error, setError] = useState("");
 
-  const API_URL = import.meta.env.VITE_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL || "https://todo-backend-phi-lovat.vercel.app/api/v1/todos";
 
   useEffect(() => {
     axios
